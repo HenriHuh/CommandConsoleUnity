@@ -193,7 +193,6 @@ namespace HenriHuh.Commands
             // Input
             Rect inputRect = new Rect(0, logHeight, Screen.width, inputHeight);
             GUI.SetNextControlName("InputField");
-            int len = userInput.Length;
             userInput = GUI.TextField(inputRect, userInput);
             if (closeConsole)
             {
@@ -208,15 +207,9 @@ namespace HenriHuh.Commands
                 textEditor.MoveCursorToPosition(new Vector2(1000, 1000));
             }
 
-            if (len != userInput.Length)
-            {
-                focusControlOnInput = true;
-            }
-
             if (previewStr.Length > 0)
             {
                 GUI.Box(previewRect, previewStr, style_CommandPreview);
-
             }
             
 
