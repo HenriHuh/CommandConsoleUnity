@@ -70,7 +70,7 @@ namespace HenriHuh.Commands
 
             for (int i = 0; i < mInfo.Length; i++)
             {
-                if (!Settings.requireAttribute || mInfo[i].GetCustomAttributes(typeof(CommandAttribute), true).Length > 0)
+                if (!this.Settings.requireAttribute || mInfo[i].GetCustomAttributes(typeof(CommandAttribute), true).Length > 0)
                 {
                     commands.Add(mInfo[i]);
                 }
