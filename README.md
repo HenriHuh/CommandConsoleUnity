@@ -6,6 +6,9 @@ Command console for Unity runtime and editor using C# reflection.
 - Call methods and fields from the runtime or editor console
 - Assign variables and use them in the console
 
+## Demo video
+[![Video](https://img.youtube.com/vi/HbKuvySszTE/0.jpg)](https://www.youtube.com/watch?v=HbKuvySszTE)
+
 ## Usage
 
 ### Runtime
