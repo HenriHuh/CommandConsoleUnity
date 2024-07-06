@@ -19,9 +19,9 @@ Command console for Unity runtime and editor using C# reflection.
 
 ```c#
     [Command]
-    public int Pow(int val)
+    public float Pow(int val)
     {
-        return Mathf.RoundToInt(Mathf.Pow(val, 2));
+        return Mathf.Pow(val, 2);
     }
 ```
 
@@ -29,6 +29,21 @@ Command console for Unity runtime and editor using C# reflection.
 
 1. Right-click on any object in the hierarchy.
 2. Select `Console` from the context menu.
+
+### Syntax for Invoking Commands
+#### Methods without parameters
+- _MethodName_
+- Example: GetPosition
+#### Methods with single parameters
+- _MethodName_ _Parameter_
+- Example: Pow 2
+#### Methods with single or multiple parameteres
+- _MethodName_(_Parameter1, Parameter2, ..._)
+- Example: Multiply(2, 4)
+#### Assigning Variables
+- _VariableName_ = _MethodName_(_Parameter1, Parameter2, ..._)
+- Example: position = GetPosition
+- Example: InstantiateItem(Box, position)
 
 ### Code
 
